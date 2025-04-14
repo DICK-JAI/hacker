@@ -21,6 +21,8 @@
     print_r($_POST);
     echo "< /pre>"; */
 
+    //+验证码
+
     if(isset($_POST['submit'])){
       $user = isset($_POST['id']) ? $_POST['id'] : null ;
       $psw = isset($_POST['passwd']) ? $_POST['passwd'] : null ;
@@ -30,9 +32,10 @@
         }else{
             echo "ERRO";
         }
-        login($user,$psw);
+        
 
       }
+      login($user,$psw);
     }
     
     ?>
