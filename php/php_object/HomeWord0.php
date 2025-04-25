@@ -8,9 +8,9 @@
 <body>
     <h1>Form</h1>
     <form method="post">
-        USER-ID: <input type="text" name="id">
-        Password: <input type="password" name="passwd">
-        Verification Code: <input type="text" name="captcha">
+        USER-ID: <input type="text" name="id"> <br>
+        Password: <input type="password" name="passwd"> <br>
+        Verification Code: <input type="text" name="captcha"> <br>
         <p>Enter the code: <?php echo $code = rand(1000, 9999); ?></p> 
         <input type="hidden" name="captcha_code" value="<?php echo $code; ?>">
         <input type="submit" value="OK" name="submit">
